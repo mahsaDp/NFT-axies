@@ -1,0 +1,234 @@
+
+header{
+    padding-right: 5px;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #3d3d3d;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: transparent;
+    justify-content: space-between;
+    box-shadow: -1px 1px 7px gray;
+}
+
+
+.flexible{
+    display: flex;
+}
+
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo img{
+    width: 126px;
+    height: 53px;
+}
+
+
+.navbar-item{
+    position: relative;
+}
+
+.navbar-item:not(li:nth-child(1)):after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    border-top: 6px solid white;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transition: all 0.5s ease;
+}
+
+
+.navbar-item>a{
+    padding: 0 20px;
+    color: white;
+    font-size: 17px;
+}
+
+.navbar-item-sublist{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 170px;
+    background-color: whitesmoke;
+    flex-direction: column;
+    border-radius: 15px;
+    z-index: 2;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s ease;
+}
+.navbar-item-sublist:before{
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 20px;
+    display: block;
+    border-bottom: 7px solid white;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.navbar-item:hover>a{
+    color: #DF4949;
+}
+
+.navbar-item:hover ul{
+    transform: scaleY(1);
+}
+
+.navbar-item:hover:after{
+    transform: rotate(90deg);
+    border-top: 5px solid #DF4949;
+}
+
+.sub-item-show{
+    height: 300px;
+}
+
+.sub-item>a{
+    width: 90%;
+    padding: 15px 0;
+    text-align: center;
+    color: rgb(2,2,2);
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 0 1px 0 antiquewhite;
+    transition: all 0.5s ease;
+}
+
+.sub-item:last-child a{
+    box-shadow: none;
+}
+
+.sub-item:hover{
+    background-color: #f3c6cb;
+    border-radius: 15px;
+}
+
+.sub-item:hover a{
+    color: deeppink;
+    /*font-size: 16px;*/
+    /*padding: 15px 2px;*/
+}
+
+.right-head{
+    align-items: center;
+}
+
+.right-head>*{
+    margin-right: 15px;
+}
+
+.search-box{
+    padding: 10px 0 10px 15px;
+    align-items: center;
+    transition: all .7s ease;
+}
+
+.search-box i{
+    font-size: 15px;
+}
+
+.search-box>i:hover{
+    cursor: pointer;
+}
+
+#search{
+    width: 0;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    border-radius: 20px;
+    transition: all 0.7s ease;
+}
+
+
+.connect{
+    padding: 12px 15px;
+    border: 1px solid blue;
+    border-radius: 50px;
+    text-align: center;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.connect>i{
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+}
+.connect:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: blue;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 10px;
+    background-color: #343444;
+    margin-right: 7px;
+    transition: all 0.5s ease;
+}
+
+
+.icons a img{
+    background-color: white;
+    /*background-color: #6b2089;*/
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 7px;
+}
+
+.icons>*:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.icons>div:hover a{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+
+.sun:hover{
+    background-color: lightyellow;
+}
+
+.sun:hover img{
+    background-color: #eeee84;
+    border-radius: 50%;
+}
+
+/*.moon:hover{*/
+/*    background-color: transparent;*/
+/*}*/
+
+/*.moon img:hover{*/
+/*    background-color: whitesmoke;*/
+/*}*/
+
+.sun img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}

@@ -1,0 +1,187 @@
+
+
+@import "layout.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+@import "product.css";
+
+
+
+
+.notification{
+    align-items: start;
+}
+
+.notification-icon{
+    padding: 9px 10px;
+    font-size: 16px;
+    background-color: var(--post-bg-color);
+    border-radius: 7px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.personal-image img{
+    width: 35px;
+    height: 37px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.profile-section{
+    padding: 80px 30px;
+    display: grid;
+    grid-template-columns: 1fr minmax(400px, 6fr);
+    gap: 50px;
+    align-items: start;
+}
+
+.profile-image{
+    padding: 15px;
+    background-color: var(--post-bg-color);
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.profile-image img{
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+.profile-image>*:not(.user-image-delete){
+    margin-bottom: 20px;
+}
+
+.profile-image__upload,
+.profile-image__delete,
+.profile-content button{
+    color: inherit;
+}
+
+.profile-image__upload{
+    position: relative;
+}
+
+/*#form-uploader{*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    left: 0;*/
+/*    opacity: 1;*/
+/*    z-index: 5;*/
+/*}*/
+
+.profile-content{
+    /*width: 75%;*/
+}
+
+.profile-content>*{
+    margin-bottom: 30px;
+}
+
+.profile-content button{
+    padding: 10px 20px;
+}
+
+.profile-content-titr{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.profile-content-caption{
+    font-size: 12px;
+    font-weight: 500;
+    color: #b1afaf;
+    margin-bottom: 5px;
+}
+
+.cover-container{
+    justify-content: space-between;
+}
+.cover-container>div{
+    border-radius: 5px;
+    width: 30%;
+    height: 100px;
+}
+
+.cover-container>div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+}
+
+.cover-container>div>img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.cover-active{
+    border: 2px solid blue;
+}
+
+.cover-active,
+.cover-container>div>img{
+    border-radius: 5px;
+}
+
+.profile-content-middle{
+    justify-content: space-between;
+}
+
+.profile-content-middle>div{
+    width: 48%;
+}
+
+.profile-content-middle input{
+    padding: 15px;
+}
+
+
+.profile-content-middle input:focus::placeholder{
+    color: transparent;
+    transition: all 0.3s ease-out;
+}
+
+.profile-content-account>div,
+.profile-content-socialMedia>div{
+    margin-bottom: 30px;
+}
+
+.profile-content-account>div>input,
+.profile-content-socialMedia>div>input,
+.profile-content-account>div>textarea{
+    background-color: transparent;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #4c4b4b;
+}
+
+.profile-content-socialMedia>div>button{
+    margin-top: 15px;
+    background-color: #3d3dba;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.profile-content-socialMedia div button span{
+    transform: translateX(-20px);
+    transition: transform 0.5s;
+}
+
+.profile-content-socialMedia div button i{
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+
+.profile-content-socialMedia div button:hover span{
+    transform: translateX(10px);
+}
+
+.profile-content-socialMedia div button:hover i{
+    transform: scale(1.2);
+}

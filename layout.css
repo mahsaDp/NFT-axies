@@ -1,0 +1,191 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+
+*,
+*:after,
+*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #0b0f15;
+    --mr-right10: 10px;
+    --post-bg-color: #343444;
+    --poppins-font: poppins, Serif;
+    --lato-font: lato, Serif;
+}
+html{
+    font-size: 14px;
+    font-family: Poppins, serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+h1,h2,
+h3,h4,
+h5,h6{
+    font-family: Urbanist, serif!important;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 56px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+input:not(#search){
+    color: white;
+}
+
+.white-mood input{
+    color: black!important;
+}
+
+textarea{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.pd-left{
+    padding-left: 65px!important;
+}
+
+.mr-30{
+    margin-right: 30px;
+}
+
+
+body{
+    background-color: var(--bg-color);
+    color: white;
+}
+
+/*.container{*/
+/*    !*padding-left: 30px;*!*/
+/*}*/
+
+
+.white-mood{
+    background-color: whitesmoke;
+}
+
+.white-mood .primary-head{
+    background-color: var(--bg-color)!important;
+}
+
+.white-mood h2,
+.white-mood h1{
+    color: #3d3c3c;
+}
+
+.white-mood h3,
+.white-mood p{
+    color: rgb(2,2,2)!important;
+}
+
+.white-mood .navbar-item-sublist{
+    background-color: var(--bg-color);
+}
+
+.white-mood .sub-item a{
+    color: whitesmoke;
+    box-shadow: 0 1px 0 rgb(17,17,17);
+}
+.white-mood .link-item>i{
+    color: var(--bg-color);
+}
+
+.white-mood .links-box{
+    background-color: whitesmoke;
+}
+
+.white-mood .section1-text button{
+    color: #262424;
+}
+
+.white-mood .section1 .text-side button:hover{
+    color: blue;
+    background-color: lightseagreen;
+}
+
+.white-mood .section3,
+.white-mood .product-live-auction{
+    background-color: papayawhip;
+}
+
+.white-mood .section3-foot-btn{
+    border: 1px solid black;
+}
+
+.white-mood .section3 .foot-btn6 i,
+.white-mood .section3 .foot-btn1 i{
+    color: #1c1b1b;
+}
+
+.white-mood .section3-active{
+    border: 1px solid black;
+}
+
+.white-mood .section6-navbar-btn{
+    color: rgb(2,2,2);
+}
+
+.white-mood footer>.footer-link-item h3{
+    color: white!important;
+}
+
+.white-mood footer>.footer-logo>p{
+    color: whitesmoke!important;
+}
+
+.white-mood footer .go-up-btn{
+    background-color: #1cb1e7;
+}
+
+.white-mood .section1{
+    background-color: papayawhip;
+}
+
+.white-mood .back-gnd h1{
+    color: whitesmoke!important;
+}
+
+.white-mood .info-btn{
+    border-color: green;
+    color: green;
+}
+
+.white-mood .table-head span a,
+.white-mood .product-table span{
+    color: darkgoldenrod;
+    font-weight: 700;
+}
+
+.white-mood .table-head span a:hover{
+    color: royalblue;
+}
+
+.white-mood .product-head{
+    background-color: transparent;
+}
