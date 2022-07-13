@@ -1,6 +1,6 @@
 # Axies NFT Marketplace
 
-[comment]: <> (![screenshot]&#40;https://user-images.githubusercontent.com/100931501/173229167-bc28e0ba-00ac-4d44-8bf2-7131c6337597.png&#41;)
+![screenshot](https://user-images.githubusercontent.com/100931501/178693063-8d161c5a-ab66-47b0-814b-0815ea5e10d1.png)
 
 ## About Project
 
